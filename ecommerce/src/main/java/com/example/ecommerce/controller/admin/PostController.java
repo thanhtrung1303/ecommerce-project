@@ -76,7 +76,7 @@ public class PostController {
     }
 
     @DeleteMapping("/api/admin/posts/{id}")
-    public ResponseEntity<?> updatePost( @PathVariable long id) {
+    public ResponseEntity<?> deletePost( @PathVariable long id) {
         postService.deletePost(id);
 
         return ResponseEntity.ok("Xóa thành công");

@@ -25,7 +25,7 @@
                             <div class="widget-summary">
                                 <div class="widget-summary-col">
                                     <div class="summary">
-                                        <h4 class="title">Số lượng sản phẩm</h4>
+                                        <h4 class="title">Quản lý sản phẩm</h4>
                                         <div class="info">
                                             <strong class="amount" id="product-count" th:text="${countProducts}"></strong>
                                         </div>
@@ -44,7 +44,7 @@
                             <div class="widget-summary">
                                 <div class="widget-summary-col">
                                     <div class="summary">
-                                        <h4 class="title">Số lượng danh mục</h4>
+                                        <h4 class="title">Quản lý danh mục</h4>
                                         <div class="info">
                                             <strong class="amount" id="category-count" th:text="${countCategories}"></strong>
                                         </div>
@@ -63,7 +63,7 @@
                             <div class="widget-summary">
                                 <div class="widget-summary-col">
                                     <div class="summary">
-                                        <h4 class="title">Số lượng user</h4>
+                                        <h4 class="title">Quản lý user</h4>
                                         <div class="info">
                                             <strong class="amount" id="countUser" th:text="${countUsers}"></strong>
                                         </div>
@@ -84,7 +84,7 @@
                             <div class="widget-summary">
                                 <div class="widget-summary-col">
                                     <div class="summary">
-                                        <h4 class="title">Số lượng đơn hàng</h4>
+                                        <h4 class="title">Quản lý đơn hàng</h4>
                                         <div class="info">
                                             <strong class="amount" id="order-count" th:text="${countOrders}"></strong>
                                         </div>
@@ -104,7 +104,7 @@
                             <div class="widget-summary">
                                 <div class="widget-summary-col">
                                     <div class="summary">
-                                        <h4 class="title">Số lượng nhãn hiệu</h4>
+                                        <h4 class="title">Quản lý nhãn hiệu</h4>
                                         <div class="info">
                                             <strong class="amount" id="brands-count" th:text="${countBrands}"></strong>
                                         </div>
@@ -124,7 +124,7 @@
                             <div class="widget-summary">
                                 <div class="widget-summary-col">
                                     <div class="summary">
-                                        <h4 class="title">Số lượng bài viết</h4>
+                                        <h4 class="title">Quản lý bài viết</h4>
                                         <div class="info">
                                             <strong class="amount" id="post-count" th:text="${countPost}"></strong>
                                         </div>
@@ -137,6 +137,27 @@
                         </div>
                     </section>
                 </div>
+
+                <div class="col-xl-4">
+                    <section class="card card-featured-left card-featured-quaternary">
+                        <div class="card-body">
+                            <div class="widget-summary">
+                                <div class="widget-summary-col">
+                                    <div class="summary">
+                                        <h4 class="title">Quản lý bình luận</h4>
+                                        <div class="info">
+                                            <strong class="amount" id="comment-count" th:text="${countComment}"></strong>
+                                        </div>
+                                    </div>
+                                    <div class="summary-footer">
+                                        <a class="text-muted text-uppercase" href="/admin/comments">(Xem chi tiết)</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
             </div>
         </div>
     </div>

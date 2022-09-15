@@ -32,12 +32,12 @@ public class Comment {
     @Column(name = "created_at")
     private Timestamp createdAt;
 
-    @ManyToOne(optional = false)
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JsonIgnore
     @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User user;
 
-    @ManyToOne(optional = false)
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JsonIgnore
     @JoinColumn(name = "product_id", referencedColumnName = "id")
     private Product product;

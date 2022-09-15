@@ -51,7 +51,6 @@ public class CategoryService {
     }
 
     public void deleteCategory(int id) {
-        // Check category exist
         Optional<Category> categoryOptional = categoryRepository.findById(id);
         if (categoryOptional.isEmpty()) {
             throw new NotFoundException("Category không tồn tại");

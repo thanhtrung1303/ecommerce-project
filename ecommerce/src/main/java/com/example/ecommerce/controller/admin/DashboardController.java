@@ -23,9 +23,11 @@ public class DashboardController {
     @Autowired
     private UserRepository userRepository;
 
-
     @Autowired
     private PostRepository postRepository;
+
+    @Autowired
+    private CommentRepository commentRepository;
 
     @GetMapping("/admin")
     public String getDashboardPage(Model model) {
@@ -35,6 +37,7 @@ public class DashboardController {
         model.addAttribute("countOrders", orderRepository.count());
         model.addAttribute("countUsers", userRepository.count());
         model.addAttribute("countPost", postRepository.count());
+        model.addAttribute("countComment", commentRepository.count());
         return "admin/dashboard";
     }
 }
